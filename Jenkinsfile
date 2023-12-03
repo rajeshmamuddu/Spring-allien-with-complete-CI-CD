@@ -1,6 +1,6 @@
 pipeline{
   environment {
-    scannerHome = tool 'SonarQubeScanner'
+    scannerHome = tool 'sonarqube'
     registryCredential = 'Docker-cred'
     dockerImage = ''
   }
