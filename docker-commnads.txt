@@ -1,0 +1,30 @@
+docker images  #  to show all the images and imageId's
+
+docker ps -a  #  to show running images and containerId's
+
+docker build -t abhijithd97/demoapp .  #  to create an image
+
+docker run -p 8081:8080 abhijithd97/demoapp   #  to run an image
+
+docker login  #  to login
+
+docker tag <imageID> <repositoryName>:<tagName>  #  to add tag to the image
+
+docker push abhijithd97/demoapp #  to push an image to dockerHub
+
+docker pull abhijithd97/demoapp   #   to pull an image from dockerHub
+
+
+docker build -t likitha123/reactapp . # to build image
+
+docker login # give username and password when it is prompted
+
+docker images # to get the imageid
+
+docker tag  imageid likhitha123/reactapp:demo
+
+docker push likhitha123/reactapp:demo
+
+
+docker run -p 5001:5001 likhitha123/reactapp:demo
+
