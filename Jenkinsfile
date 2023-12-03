@@ -1,8 +1,7 @@
 pipeline{
   environment {
     scannerHome = tool 'SonarQubeScanner'
-    registry = "simhalp9/springali"
-    registryCredential = 'dockerhub'
+    registryCredential = 'Docker-cred'
     dockerImage = ''
   }
   agent any
@@ -33,7 +32,7 @@ pipeline{
                   }
               }
             }
-         stage('Sonarqube') {
+         stage('sonarqube') {
  
             steps {
               script {
